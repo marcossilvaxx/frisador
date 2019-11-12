@@ -1,6 +1,6 @@
 # frisador
 
-Frisador que gera todos os frisos possíveis, utilizando **simetrias**, dado um motivo (uma imagem de entada).
+Frisador que gera todos os frisos possíveis, utilizando **simetrias**, dado um motivo (uma imagem de entrada).
 
 ## Simetrias?
 Uma   simetria   consiste   numa   transformação   geométrica que deixa a figura exatamente igual. Há  um  deslocamento  ponto  por  ponto  mas,  no  seu  conjunto,  a  figura  não  se  altera.  Existem  quatro tipos de simetrias fundamentais:
