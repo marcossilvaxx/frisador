@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkslateblue;
+}
+
+.content{
+    background-color: white;
+    width: 70%;
+    height: 70%;
+}
+
+.content > h1{
+    text-align: center;
+    font-weight: 700;
+    margin: 5%;
+}
+
+.upload{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn{
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+    background-color: cornflowerblue;
+    padding: 7px 15px;
+    border: 0;
+}
+
+.btn:hover{
+    background-color: white;
+    color: cornflowerblue;
+}
+
+.upload form input{
+    display: none;
+}
+
+.upload img{
+    margin: 50px 0 0;
+    width: 30%;
+}
