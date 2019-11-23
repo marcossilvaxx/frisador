@@ -14,19 +14,20 @@ body{
     background-color: darkslateblue;
 }
 
-.content{
+.container{
     background-color: white;
-    width: 70%;
-    height: 70%;
+    width: 90vw;
+    height: 90vh;
 }
 
-.content > h1{
+.container > h1{
     text-align: center;
     font-weight: 700;
     margin: 5%;
 }
 
-.upload{
+.content{
+    max-height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,11 +47,44 @@ body{
     color: cornflowerblue;
 }
 
-.upload form input{
+.content form input{
     display: none;
 }
 
-.upload img{
-    margin: 50px 0 0;
+.content > img{
+    margin: 3% 0 0;
+    max-width: 30%;
+}
+
+.content > button.btn{
+    margin: 3% 0;
+}
+
+.frisos{
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-wrap: wrap;
+}
+
+.friso{
+    margin: 1%;
+    width: 48%;
+    background-color: cadetblue;
+}
+
+.friso img{
+    float: left;
+    margin: 1% 0 0 1%;
     width: 30%;
+}
+
+.buttons{
+    margin: 1% 1% 0 0;
+    float: right;
+}
+
+.friso1{
+    transform: translateX(100%);
 }

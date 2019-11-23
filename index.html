@@ -9,15 +9,76 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        <div class="content">
+        <div class="container">
             <h1>Frisador</h1>
-            <div class="upload">
+            <div class="content">
                 <form>
                     <label class="btn" for="imagem">Selecionar motivo (imagem)</label>
-                    <input type="file" name="imagem" id="imagem" accept="image/*">
+                    <input onchange="previewImage(event)" type="file" name="imagem" id="imagem" accept="image/*">
                 </form>
-                <img id="img" src="">
-                <button class="btn">Gerar frisos</button>
+                <!--<a id="download" download="friso1">-->
+                    <img id="img" src="">
+                <!--</a>-->
+                <button onclick="gerar()" class="btn">Gerar frisos</button>
+                <div class="frisos">
+                    <div class="friso">
+                        <img>
+                        <div class="buttons">
+                            <button class="btn">Ver friso</button>
+                            <button class="btn">Download</button>
+                        </div>
+                        <img class="friso1">
+                    </div>
+                    <div class="friso">
+                        <img>
+                        <div class="buttons">
+                            <button class="btn">Ver friso</button>
+                            <button class="btn">Download</button>
+                        </div>
+                        <img>
+                    </div>
+                    <div class="friso">
+                        <img>
+                        <div class="buttons">
+                            <button class="btn">Ver friso</button>
+                            <button class="btn">Download</button>
+                        </div>
+                        <img>
+                    </div>
+                    <div class="friso">
+                        <img>
+                        <div class="buttons">
+                            <button class="btn">Ver friso</button>
+                            <button class="btn">Download</button>
+                        </div>
+                        <img>
+                    </div>
+                    <div class="friso">
+                        <img>
+                        <div class="buttons">
+                            <button class="btn">Ver friso</button>
+                            <button class="btn">Download</button>
+                        </div>
+                        <img>
+                    </div>
+                    <div class="friso">
+                        <img>
+                        <div class="buttons">
+                            <button class="btn">Ver friso</button>
+                            <button class="btn">Download</button>
+                        </div>
+                        <img>
+                    </div>
+                    <div class="friso">
+                        <img>
+                        <div class="buttons">
+                            <button class="btn">Ver friso</button>
+                            <button class="btn">Download</button>
+                        </div>
+                        <img>
+                    </div>
+                    <button onclick="init()" class="btn">Voltar</button>
+                </div>
             </div>
         </div>
         <script src="js/scripts.js"></script>

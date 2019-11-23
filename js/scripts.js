@@ -1,13 +1,48 @@
-var inputImg = document.getElementById("imagem");
+var content = document.querySelector(".content");
+var initContent = content.innerHTML;
+var larguraImagem;
+var alturaImagem;
 
-function previewImage(){
+function previewImage(event){
     var file = new FileReader();
-    console.log(this.files)
     file.onload = function(e){
-        document.getElementById("img").src = e.target.result;
+        var imagem = document.getElementById("img");
+        imagem.src = e.target.result;
+        //var download = document.getElementById("download");
+        //download.href = e.target.result;
     }
 
-    file.readAsDataURL(this.files[0]);
+    file.readAsDataURL(event.target.files[0]);
 }
 
-inputImg.addEventListener('change', previewImage);
+function gerar(){
+    var img = document.getElementById("img").src;
+    document.querySelector(".frisos").style.display = "flex";
+    document.querySelectorAll(".frisos img").forEach(element => {
+        element.src = img;
+        alturaImagem = element.offsetHeight;
+        larguraImagem = element.offsetWidth;
+        element.parentElement.style.height = 2 * alturaImagem + 0.04 * element.parentElement.offsetHeight + "px";
+        if(element.nextElementSibling != null){
+            var proxElement = element.nextElementSibling.nextElementSibling;
+            proxElement.src = element.src;
+            proxElement.style.marginLeft = -larguraImagem + "px";
+            //proxElement.style.marginTop = alturaImagem + 0.02 * element.parentElement.offsetHeight + "px";
+        }
+    });
+    clean();
+}
+
+function frisar(numFriso){
+    
+}
+
+function init(){
+    content.innerHTML = initContent;
+}
+
+function clean(){
+    var child = document.querySelector(".frisos");
+    content.innerHTML = "";
+    content.appendChild(child);
+}
