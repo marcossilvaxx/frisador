@@ -70,14 +70,14 @@ body{
 
 .friso{
     margin: 1%;
-    width: 48%;
+    width: 100%;
     background-color: cadetblue;
 }
 
 .friso img{
     float: left;
     margin: 1% 0 0 1%;
-    width: 30%;
+    width: 10%;
 }
 
 .buttons{
@@ -85,6 +85,27 @@ body{
     float: right;
 }
 
-.friso1{
+
+.friso2{
+    transform: translateX(100%);
+}
+
+.friso3{
+    transform: translateX(100%);
+}
+
+.friso4{
+    transform: translateX(100%);
+}
+
+.friso5{
+    transform: translateX(100%);
+}
+
+.friso6{
+    transform: translateX(100%);
+}
+
+.friso7{
     transform: translateX(100%);
 }
