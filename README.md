@@ -22,3 +22,13 @@ As duas últimas têm simetrias de translação em mais do que uma direção e d
 A classificação dos frisos e padrões em categorias diz respeito às simetrias que apresentam.
 
 De acordo com um teorema matemático, só existem 17 tipos de padrões e 7 tipos de frisos. Na calçada de Lisboa, estão já representados todos os tipos de frisos e 11 tipos de padrões.
+
+## Autores
+
+* **Marcos Silva** - *Base do programa implementado*
+
+Lista de [contribuidores](https://github.com/marcossilvaxx/calculator-app/contributors) que participaram deste projeto.
+<a href="https://github.com/marcossilvaxx" target="_blank">**Marcos Silva**</a> 
+| :---: |
+| [![Marcos Silva](https://avatars0.githubusercontent.com/u/20626761?s=200&u=3c6268b8f5ed533fc116536f1a20fdf46c5edc93&v=4)](https://github.com/marcossilvaxx)|
+| <a href="https://github.com/marcossilvaxx" target="_blank">`github.com/marcossilvaxx`</a> |
